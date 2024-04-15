@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  background: aquamarine;
+}
+
+.nav-item {
+  border: black solid 1px;
+  margin: 10px;
+}
+
+.card {
+  width: 165px;
+  border: black solid 1px;
+}
+
+.card-img-top {
+  height: 200px;
+  padding: 5px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.pages {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 70%;
+  }
+  .column {
+    display: flex;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1750px;
+  }
+
+  .pages {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    display: none;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 3200px;
+  }
+
+  .pages {
+    margin-bottom: 10px;
+  }
+}
